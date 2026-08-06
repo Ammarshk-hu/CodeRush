@@ -12,7 +12,7 @@
 - **Event Date:** 22 August 2026
 - **Event Time:** 10:00 AM IST to 10:00 PM IST (12 Hours Continuous Webathon / Ideathon)
 - **Eligibility:** Open to all college students (Solo & Teams up to 4 members)
-- **Prize Pool:** ₹50,000+ in Cash Prizes, Trophies, Certificates, and Swags
+- **Prize Pool:** ₹5,000+ in Cash Prizes, Trophies, Certificates, and Swags
 
 ---
 
