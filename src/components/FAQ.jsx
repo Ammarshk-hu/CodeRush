@@ -56,54 +56,53 @@ export default function FAQ() {
   const [openFaq, setOpenFaq] = useState(null);
 
   return (
-    <section id="faq" className="relative overflow-hidden bg-[#f8f8fc] py-24">
+    <section id="faq" className="relative overflow-hidden bg-[#f8f8fc] py-16 md:py-20">
       {/* Subtle purple radial gradient wash */}
-      <div className="pointer-events-none absolute top-0 left-1/2 h-[600px] w-[900px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(139,92,246,0.12)_0%,rgba(139,92,246,0)_70%)]" />
+      <div className="pointer-events-none absolute top-0 left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(139,92,246,0.12)_0%,rgba(139,92,246,0)_70%)]" />
 
       {/* Very subtle floating blurred accent circles */}
       <div className="pointer-events-none absolute top-24 -left-24 h-72 w-72 rounded-full bg-[#8b5cf6] opacity-[0.08] blur-[110px]" />
       <div className="pointer-events-none absolute bottom-10 -right-16 h-80 w-80 rounded-full bg-[#06b6d4] opacity-[0.06] blur-[110px]" />
 
-      <div className="relative max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#8b5cf6]/25 text-[#8b5cf6] text-xs font-bold uppercase tracking-widest shadow-sm">
+      <div className="relative max-w-4xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-10">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#8b5cf6]/25 text-[#8b5cf6] text-xs font-bold uppercase tracking-widest shadow-sm">
             <Sparkles className="w-4 h-4 text-[#ccff00]" style={{ filter: "drop-shadow(0 0 4px rgba(204,255,0,0.5))" }} />
             Frequently Asked Questions
           </div>
 
-          <h2 className="mt-6 text-4xl md:text-6xl font-black text-[#0f0f15] leading-tight">
+          <h2 className="mt-4 text-3xl md:text-5xl font-black text-[#0f0f15] leading-tight">
             Got Questions?
             <br />
             <span className="text-[#8b5cf6]">We've Got Answers.</span>
           </h2>
 
-          <p className="mt-6 max-w-2xl mx-auto text-[#5b6070] text-base md:text-lg leading-relaxed">
+          <p className="mt-3 max-w-lg mx-auto text-[#5b6070] text-sm md:text-base leading-relaxed">
             Everything you need to know before participating in{" "}
             <span className="text-[#8b5cf6] font-semibold">CodeRush 1.0</span>.
-            Still have questions? Reach out to our organizing team anytime.
           </p>
         </div>
 
-        <div className="space-y-5">
+        <div className="space-y-3.5 max-w-3xl mx-auto">
           {faqs.map((faq, index) => {
             const isOpen = openFaq === index;
 
             return (
               <div
                 key={index}
-                className={`group rounded-[28px] border bg-white/80 backdrop-blur-xl transition-all duration-500 overflow-hidden ${
+                className={`group rounded-2xl border bg-white/90 backdrop-blur-xl transition-all duration-300 overflow-hidden ${
                   isOpen
-                    ? "border-[#8b5cf6]/60 shadow-[0_20px_50px_-12px_rgba(139,92,246,0.22)] -translate-y-0.5"
-                    : "border-[#e6e3f5] shadow-[0_1px_2px_rgba(15,15,21,0.04)] hover:border-[#8b5cf6]/40 hover:shadow-[0_16px_40px_-16px_rgba(139,92,246,0.22)] hover:-translate-y-0.5"
+                    ? "border-[#8b5cf6]/60 shadow-[0_12px_30px_-8px_rgba(139,92,246,0.18)]"
+                    : "border-[#e6e3f5] shadow-sm hover:border-[#8b5cf6]/40 hover:shadow-md"
                 }`}
               >
                 <button
                   onClick={() => setOpenFaq(isOpen ? null : index)}
-                  className="w-full px-8 py-7 flex items-center justify-between text-left"
+                  className="w-full px-5 sm:px-6 py-4 flex items-center justify-between text-left gap-4"
                 >
-                  <div className="flex items-center gap-5">
+                  <div className="flex items-center gap-3.5">
                     <div
-                      className={`h-12 w-12 rounded-2xl flex items-center justify-center font-bold transition-all duration-300 ${
+                      className={`h-9 w-9 rounded-xl flex items-center justify-center text-xs font-mono font-bold transition-all duration-300 shrink-0 ${
                         isOpen
                           ? "bg-[#8b5cf6] text-white"
                           : "bg-[#f4f1ff] text-[#8b5cf6] group-hover:bg-[#8b5cf6] group-hover:text-white"
@@ -112,25 +111,22 @@ export default function FAQ() {
                       {String(index + 1).padStart(2, "0")}
                     </div>
 
-                    <div>
-                      <h3
-                        className={`text-lg md:text-xl font-bold transition-colors duration-300 ${
-                          isOpen ? "text-[#0f0f15]" : "text-[#0f0f15]/90 group-hover:text-[#0f0f15]"
-                        }`}
-                      >
-                        {faq.q}
-                      </h3>
-                      <p className="text-sm text-[#7b8090] mt-1">Click to view answer</p>
-                    </div>
+                    <h3
+                      className={`text-sm sm:text-base font-bold transition-colors duration-300 ${
+                        isOpen ? "text-[#0f0f15]" : "text-[#0f0f15]/90 group-hover:text-[#8b5cf6]"
+                      }`}
+                    >
+                      {faq.q}
+                    </h3>
                   </div>
 
                   <div
-                    className={`h-11 w-11 shrink-0 rounded-full flex items-center justify-center transition-all duration-500 ${
+                    className={`h-8 w-8 shrink-0 rounded-full flex items-center justify-center transition-all duration-300 ${
                       isOpen ? "bg-[#8b5cf6] rotate-180" : "bg-[#f4f1ff] group-hover:bg-[#8b5cf6]/10"
                     }`}
                   >
                     <ChevronDown
-                      className={`w-5 h-5 transition-colors duration-300 ${
+                      className={`w-4 h-4 transition-colors duration-300 ${
                         isOpen ? "text-white" : "text-[#8b5cf6]"
                       }`}
                     />
@@ -138,17 +134,17 @@ export default function FAQ() {
                 </button>
 
                 <div
-                  className={`grid transition-all duration-500 ease-in-out ${
+                  className={`grid transition-all duration-300 ease-in-out ${
                     isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <div className="px-8 pb-8 pt-2 border-t border-[#e6e3f5]">
-                      <div className="flex items-start gap-4">
-                        <div className="mt-1">
-                          <HelpCircle className="w-5 h-5 text-[#06b6d4]" />
+                    <div className="px-6 pb-4 pt-2 border-t border-[#e6e3f5]">
+                      <div className="flex items-start gap-3">
+                        <div className="mt-0.5">
+                          <HelpCircle className="w-4 h-4 text-[#06b6d4] shrink-0" />
                         </div>
-                        <p className="text-[#4b5563] leading-8 text-base">{faq.a}</p>
+                        <p className="text-[#4b5563] leading-relaxed text-xs sm:text-sm">{faq.a}</p>
                       </div>
                     </div>
                   </div>

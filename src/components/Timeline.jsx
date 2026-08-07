@@ -84,7 +84,7 @@ export default function Timeline() {
             <Clock className="w-3.5 h-3.5 text-graphite" />
             MISSION TIMELINE
           </div>
-          <h2 className="text-4xl sm:text-6xl font-serif font-extrabold tracking-tight text-graphite">
+          <h2 className="text-4xl sm:text-6xl font-sans font-black font-extrabold tracking-tight text-graphite">
             CHALLENGE <span className="lime-highlight">NODES</span>
           </h2>
           <p className="text-base sm:text-lg font-medium text-graphite/70">
@@ -152,7 +152,7 @@ export default function Timeline() {
                         <span className="text-xs font-mono font-extrabold text-graphite/60 uppercase tracking-wider">
                           {evt.time}
                         </span>
-                        <h3 className="text-lg sm:text-xl font-serif font-bold text-graphite">
+                        <h3 className="text-lg sm:text-xl font-sans font-black font-bold text-graphite">
                           {evt.title}
                         </h3>
                         <p className="text-xs sm:text-sm text-graphite/70 mt-1">
@@ -198,7 +198,7 @@ export default function Timeline() {
                 <div className="flex items-center gap-3 mb-6 pb-4 border-b border-[#e2e2dd]">
                   <ShieldCheck className="w-6 h-6 text-graphite" />
                   <div>
-                    <h3 className="text-2xl font-serif font-bold text-graphite">
+                    <h3 className="text-2xl font-sans font-black font-bold text-graphite">
                       REQUIRED SUBMISSION FIELDS
                     </h3>
                     <p className="text-xs font-mono text-graphite/60 uppercase">
@@ -228,7 +228,7 @@ export default function Timeline() {
               <div className="p-6 rounded-2xl bg-amber-50 border-2 border-amber-400 flex items-start gap-4">
                 <AlertTriangle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-serif font-bold text-amber-900 text-lg">
+                  <h4 className="font-sans font-black font-bold text-amber-900 text-lg">
                     STRICT DEADLINE ENFORCEMENT
                   </h4>
                   <p className="text-xs sm:text-sm text-amber-800 mt-1">

@@ -44,7 +44,7 @@ export default function RulesAndGuidelines() {
             <ShieldCheck className="w-3.5 h-3.5 text-purple" />
             PROTOCOL & RULES
           </div>
-          <h2 className="text-4xl sm:text-6xl font-serif font-extrabold tracking-tight text-graphite">
+          <h2 className="text-4xl sm:text-6xl font-sans font-black font-extrabold tracking-tight text-graphite">
             RULES & <span className="purple-highlight">GUIDELINES</span>
           </h2>
           <p className="text-base sm:text-lg font-medium text-graphite/70">
@@ -59,7 +59,7 @@ export default function RulesAndGuidelines() {
           <div className="codefusion-card p-8 bg-white/90 space-y-6">
             <div className="flex items-center gap-3 pb-4 border-b border-[#e2e2f0]">
               <ShieldCheck className="w-6 h-6 text-purple" />
-              <h3 className="text-2xl font-serif font-bold text-graphite">
+              <h3 className="text-2xl font-sans font-black font-bold text-graphite">
                 RULES AND GUIDELINES
               </h3>
             </div>
@@ -80,7 +80,7 @@ export default function RulesAndGuidelines() {
             <div className="codefusion-card p-8 bg-white/90 space-y-6">
               <div className="flex items-center gap-3 pb-4 border-b border-[#e2e2f0]">
                 <Users className="w-6 h-6 text-purple" />
-                <h3 className="text-2xl font-serif font-bold text-graphite">
+                <h3 className="text-2xl font-sans font-black font-bold text-graphite">
                   ELIGIBILITY CRITERIA
                 </h3>
               </div>
@@ -101,7 +101,7 @@ export default function RulesAndGuidelines() {
                   <CreditCard className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-serif font-bold text-white text-xl">REGISTRATION FEE</h4>
+                  <h4 className="font-sans font-black font-bold text-white text-xl">REGISTRATION FEE</h4>
                   <p className="text-xs font-mono text-gray-400">OFFICIAL PAYMENT PORTAL</p>
                 </div>
               </div>

@@ -60,7 +60,7 @@ export default function Footer() {
       </div>
 
       <div>
-        <h3 className="font-serif text-[30px] font-bold text-white">
+        <h3 className="font-sans text-[30px] font-black text-white">
           CODE<span className="text-purple-light">RUSH</span> 2026
         </h3>
 

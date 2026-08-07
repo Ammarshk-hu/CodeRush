@@ -52,7 +52,7 @@ export default function About() {
               <span className="w-2 h-2 rounded-full bg-purple animate-ping"></span>
               ABOUT CODERUSH 1.0
             </div>
-            <h2 className="text-4xl sm:text-6xl font-serif font-extrabold tracking-tight text-graphite">
+            <h2 className="text-4xl sm:text-6xl font-sans font-black font-extrabold tracking-tight text-graphite">
               More Than <br className="hidden sm:block" />
               Just <span className="purple-highlight">Code.</span>
             </h2>
@@ -83,7 +83,7 @@ export default function About() {
                     </div>
                   </div>
 
-                  <h3 className="text-3xl font-serif font-extrabold text-graphite mb-2">
+                  <h3 className="text-3xl font-sans font-black font-extrabold text-graphite mb-2">
                     {card.title}
                   </h3>
                   <p className="text-sm text-graphite/70 font-medium">
@@ -111,7 +111,7 @@ export default function About() {
                   <Database className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="text-2xl sm:text-3xl font-serif font-extrabold text-graphite">
+                  <h3 className="text-2xl sm:text-3xl font-sans font-black font-extrabold text-graphite">
                     CODERUSH CORE DATABASE
                   </h3>
                   <p className="text-xs font-mono text-purple font-semibold">
@@ -134,7 +134,7 @@ export default function About() {
                   <div className="text-[10px] font-mono font-bold text-gray-500 tracking-wider uppercase mb-1">
                     {item.label}
                   </div>
-                  <div className="text-base font-serif font-bold text-graphite group-hover:text-purple transition-colors">
+                  <div className="text-base font-sans font-black font-bold text-graphite group-hover:text-purple transition-colors">
                     {item.value}
                   </div>
                 </div>

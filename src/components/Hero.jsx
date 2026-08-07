@@ -49,13 +49,13 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="relative w-full py-2 sm:py-4 px-2 sm:px-6 lg:px-8 bg-[#f8f8fc] flex flex-col items-center justify-center">
+    <section id="home" className="relative h-dvh min-h-dvh max-h-screen w-full bg-[#140e28] p-1 sm:p-2 md:p-3 overflow-hidden flex flex-col justify-center items-center">
       
-      {/* Outer Dark Purple Rounded Frame with White Space Margins (Exact Match to designathon.gdgcace.in) */}
-      <div className="w-full max-w-7xl relative rounded-[32px] sm:rounded-[40px] bg-[#140e28] p-3 sm:p-4 border-4 border-[#2d1b54] shadow-[0_20px_50px_rgba(20,14,40,0.4)] flex flex-col overflow-hidden">
+      {/* Outer Dark Purple Frame (Exact Fit Full Height & Width) */}
+      <div className="w-full h-full flex-1 relative rounded-[24px] sm:rounded-[36px] bg-[#140e28] p-1.5 sm:p-2.5 border-4 border-[#2d1b54] shadow-[0_20px_50px_rgba(20,14,40,0.4)] flex flex-col justify-between overflow-hidden">
         
-        {/* Inner Clean Light Canvas with Holographic Color Effect */}
-        <div className="relative flex-1 rounded-[24px] sm:rounded-[32px] bg-[#f8f8fc] border-2 border-purple-light/30 flex flex-col justify-between p-6 sm:p-10 lg:p-14 overflow-hidden min-h-[540px] sm:min-h-[580px]">
+        {/* Inner Clean Light Canvas */}
+        <div className="relative flex-1 rounded-[18px] sm:rounded-[30px] bg-[#f8f8fc] flex flex-col justify-between p-6 sm:p-10 lg:p-14 overflow-hidden">
           
           {/* Iridescent Holographic Wave Top Blur Overlay */}
           <div className="absolute top-0 left-0 right-0 h-[380px] holo-top-banner pointer-events-none z-0"></div>
@@ -69,26 +69,19 @@ export default function Hero() {
             }}
           ></div>
 
-          {/* Top Notch: CSI TCET Logo Badge + Embedded Nav Links */}
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-[#140e28] px-6 sm:px-10 py-2.5 rounded-b-3xl border-b-2 border-x-2 border-purple-light/50 z-30 flex items-center justify-center gap-4 shadow-md">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-xl bg-purple text-white flex items-center justify-center font-mono font-bold text-sm border border-lime shadow-[0_0_10px_#ccff00]">
-                CR
-              </div>
-              <span className="font-mono text-xs font-black tracking-widest text-white uppercase hidden sm:inline">
-                CSI TCET
-              </span>
-            </div>
+          {/* Top Notch: CSI TCET Logo Badge (Transparent Canvas Inverted Corner Curves) */}
+          <div className="absolute -top-0.5 left-1/2 transform -translate-x-1/2 bg-[#140e28] px-6 sm:px-8 py-2 rounded-b-2xl border-b-2 border-x-2 border-[#2d1b54] z-30 flex items-center justify-center gap-2.5 shadow-lg">
+            {/* Left inverted curve */}
+            <div className="absolute top-0 -left-6 w-6 h-6 pointer-events-none bg-[radial-gradient(circle_at_0%_100%,transparent_24px,#140e28_24.5px)]"></div>
+            {/* Right inverted curve */}
+            <div className="absolute top-0 -right-6 w-6 h-6 pointer-events-none bg-[radial-gradient(circle_at_100%_100%,transparent_24px,#140e28_24.5px)]"></div>
 
-            {/* Quick Links inside top notch */}
-            <div className="hidden lg:flex items-center gap-3 text-[11px] font-mono font-bold text-gray-300 pl-2 border-l border-purple-light/30">
-              <a href="#about" className="hover:text-lime transition-colors">ABOUT</a>
-              <a href="#sequence" className="hover:text-lime transition-colors">SEQUENCE</a>
-              <a href="#tracks" className="hover:text-lime transition-colors">TRACKS</a>
-              <a href="#timeline" className="hover:text-lime transition-colors">TIMELINE</a>
-              <a href="#prizes" className="hover:text-lime transition-colors">PRIZES</a>
-              <a href="#faq" className="hover:text-lime transition-colors">FAQ</a>
+            <div className="w-7 h-7 rounded-lg bg-purple text-white flex items-center justify-center font-mono font-bold text-xs border border-lime shadow-[0_0_10px_#ccff00]">
+              CR
             </div>
+            <span className="font-mono text-xs font-black tracking-widest text-white uppercase">
+              CSI TCET
+            </span>
           </div>
 
           {/* Top Right Notch: Plus (+) Action Button */}
@@ -102,92 +95,52 @@ export default function Hero() {
             </button>
           </div>
 
-          {/* Left Vertical Notch Panel: Vertical Countdown Timer */}
-          <div className="absolute top-20 left-0 hidden md:flex flex-col items-center bg-[#140e28] py-5 px-3.5 rounded-r-3xl border-r-2 border-y-2 border-purple-light/50 z-30 space-y-3 shadow-xl">
+          {/* Left Vertical Notch Panel: Vertical Countdown Timer (Transparent Canvas Inverted Corner Curves) */}
+          <div className="absolute top-20 -left-0.5 hidden md:flex flex-col items-center bg-[#140e28] py-6 px-6 sm:px-7 rounded-r-[36px] border-r-2 border-y-2 border-[#2d1b54] z-30 space-y-3.5 shadow-2xl min-w-[95px]">
+            {/* Top inverted curve */}
+            <div className="absolute -top-6 left-0 w-6 h-6 pointer-events-none bg-[radial-gradient(circle_at_100%_0%,transparent_24px,#140e28_24.5px)]"></div>
+            {/* Bottom inverted curve */}
+            <div className="absolute -bottom-6 left-0 w-6 h-6 pointer-events-none bg-[radial-gradient(circle_at_100%_100%,transparent_24px,#140e28_24.5px)]"></div>
+
             <div className="text-center">
-              <div className="text-xl font-mono font-black text-lime">{timeLeft.days}</div>
-              <div className="text-[9px] font-mono text-gray-400 font-bold uppercase">DAYS</div>
+              <div className="text-2xl sm:text-3xl font-mono font-black text-lime tracking-tight">{timeLeft.days}</div>
+              <div className="text-[10px] font-mono text-gray-400 font-extrabold uppercase tracking-wider mt-0.5">DAYS</div>
             </div>
-            <div className="w-6 h-[1px] bg-purple-light/30"></div>
+            <div className="w-10 h-[1px] bg-purple-light/30"></div>
             <div className="text-center">
-              <div className="text-xl font-mono font-black text-white">{timeLeft.hours}</div>
-              <div className="text-[9px] font-mono text-gray-400 font-bold uppercase">HOURS</div>
+              <div className="text-2xl sm:text-3xl font-mono font-black text-white tracking-tight">{timeLeft.hours}</div>
+              <div className="text-[10px] font-mono text-gray-400 font-extrabold uppercase tracking-wider mt-0.5">HOURS</div>
             </div>
-            <div className="w-6 h-[1px] bg-purple-light/30"></div>
+            <div className="w-10 h-[1px] bg-purple-light/30"></div>
             <div className="text-center">
-              <div className="text-xl font-mono font-black text-lime">{timeLeft.minutes}</div>
-              <div className="text-[9px] font-mono text-gray-400 font-bold uppercase">MINS</div>
+              <div className="text-2xl sm:text-3xl font-mono font-black text-lime tracking-tight">{timeLeft.minutes}</div>
+              <div className="text-[10px] font-mono text-gray-400 font-extrabold uppercase tracking-wider mt-0.5">MINS</div>
             </div>
-            <div className="w-6 h-[1px] bg-purple-light/30"></div>
+            <div className="w-10 h-[1px] bg-purple-light/30"></div>
             <div className="text-center">
-              <div className="text-xl font-mono font-black text-white">{timeLeft.seconds}</div>
-              <div className="text-[9px] font-mono text-gray-400 font-bold uppercase">SECS</div>
+              <div className="text-2xl sm:text-3xl font-mono font-black text-white tracking-tight">{timeLeft.seconds}</div>
+              <div className="text-[10px] font-mono text-gray-400 font-extrabold uppercase tracking-wider mt-0.5">SECS</div>
             </div>
           </div>
 
-          {/* REAL GENERATED 3D FLOATING ASSETS (100% TRANSPARENT PNGs WITHOUT ANY BACKGROUND) */}
-          
-          {/* Floating Asset 1: 3D Code Laptop (/laptop.png) */}
-          <motion.div
-            animate={{ y: [0, -14, 0], rotate: [0, -3, 0] }}
-            transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-            className="absolute top-16 left-12 lg:left-24 z-20 hidden lg:block w-36 h-36 pointer-events-none drop-shadow-[0_15px_30px_rgba(139,92,246,0.3)]"
-          >
-            <img src="/laptop.png" alt="CodeRush 3D Laptop" className="w-full h-full object-contain" />
-          </motion.div>
-
-          {/* Floating Asset 2: 3D UI/UX Figma Design Palette (/palette.png) */}
-          <motion.div
-            animate={{ y: [0, 14, 0], rotate: [0, 4, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
-            className="absolute top-20 right-12 lg:right-28 z-20 hidden lg:block w-36 h-36 pointer-events-none drop-shadow-[0_15px_30px_rgba(6,182,212,0.3)]"
-          >
-            <img src="/palette.png" alt="CodeRush 3D Palette" className="w-full h-full object-contain" />
-          </motion.div>
-
-          {/* Floating Asset 3: 3D Code Brackets (/brackets.png) */}
-          <motion.div
-            animate={{ y: [0, -12, 0], rotate: [0, 5, 0] }}
-            transition={{ duration: 5.5, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-            className="absolute bottom-20 right-16 lg:left-[80%] z-20 hidden lg:block w-32 h-32 pointer-events-none drop-shadow-[0_15px_30px_rgba(204,255,0,0.35)]"
-          >
-            <img src="/brackets.png" alt="CodeRush 3D Code Brackets" className="w-full h-full object-contain" />
-          </motion.div>
-
-          {/* Floating Asset 4: CodeFusion Periodic Glass Card (CR 26) */}
-          <motion.div
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut' }}
-            className="absolute bottom-20 left-16 lg:left-28 z-20 hidden lg:flex flex-col items-center p-3.5 rounded-2xl bg-white/80 backdrop-blur-xl border border-purple-light/40 shadow-md pointer-events-none"
-          >
-            <div className="flex items-center justify-between w-full text-[8px] font-mono font-bold text-gray-500 gap-3">
-              <span>&lt;/&gt;</span>
-              <span>2026</span>
-            </div>
-            <div className="text-2xl font-mono font-black text-purple my-0.5">CR</div>
-            <div className="text-[9px] font-mono font-bold text-white bg-purple px-2 py-0.5 rounded-full">
-              26 HACKS
-            </div>
-          </motion.div>
-
           {/* CENTER HERO MAIN CONTENT */}
-          <div className="my-auto text-center max-w-4xl mx-auto space-y-6 pt-10 sm:pt-14 pb-8 sm:pb-12 relative z-20">
+          <div className="my-auto text-center w-full max-w-5xl mx-auto space-y-5 sm:space-y-6 pt-10 sm:pt-14 pb-8 sm:pb-12 relative z-20 flex flex-col items-center justify-center px-2">
             
             {/* Top Organizer Line: Computer Society of India | Thakur College of Engineering */}
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="space-y-1.5"
+              className="space-y-1.5 text-center"
             >
-              <h2 className="text-xl sm:text-3xl lg:text-4xl font-serif font-extrabold text-graphite tracking-wide">
+              <h2 className="text-lg sm:text-2xl lg:text-3xl font-sans font-black text-graphite tracking-wide">
                 Computer Society of India
               </h2>
-              <p className="text-xs sm:text-base font-mono font-bold text-purple uppercase tracking-wider">
+              <p className="text-xs sm:text-sm lg:text-base font-mono font-bold text-purple uppercase tracking-wider">
                 Thakur College of Engineering
               </p>
-              <div className="pt-2">
-                <span className="text-[11px] font-mono tracking-widest text-gray-500 uppercase font-black px-4 py-1 rounded-full bg-white border border-[#e2e2f0] shadow-sm">
+              <div className="pt-1.5">
+                <span className="text-[10px] sm:text-xs font-mono tracking-widest text-gray-500 uppercase font-black px-3.5 py-1 rounded-full bg-white border border-[#e2e2f0] shadow-sm">
                   PRESENTS
                 </span>
               </div>
@@ -198,17 +151,17 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="relative space-y-2"
+              className="relative space-y-3 text-center w-full max-w-full overflow-hidden"
             >
-              <div className="inline-block text-xs sm:text-sm font-mono font-extrabold uppercase tracking-widest text-purple px-4 py-1 rounded-full bg-purple-light/20 border border-purple/30">
+              <div className="inline-block text-[11px] sm:text-xs lg:text-sm font-mono font-extrabold uppercase tracking-widest text-purple px-3.5 py-1 rounded-full bg-purple-light/20 border border-purple/30">
                 WEBATHON & DESIGNATHON
               </div>
 
-              <h1 className="text-6xl sm:text-8xl lg:text-9xl font-serif font-black tracking-tight text-graphite uppercase leading-tight">
-                CODE<span className="text-purple bg-gradient-to-r from-purple via-purple-light to-cyanAccent bg-clip-text text-transparent">RUSH</span>
+              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[7.5rem] font-sans font-black tracking-tight text-graphite leading-tight text-center w-full max-w-full">
+                Code<span className="text-purple bg-gradient-to-r from-purple via-purple-light to-cyanAccent bg-clip-text text-transparent">Rush</span>
               </h1>
 
-              <p className="text-base sm:text-2xl font-serif font-extrabold text-graphite tracking-wide pt-1">
+              <p className="text-sm sm:text-xl lg:text-2xl font-sans font-black text-graphite tracking-wide pt-1 text-center">
                 Where Code <span className="purple-highlight">RUSHES.</span> Impact <span className="lime-highlight">explodes.</span>
               </p>
             </motion.div>
@@ -242,8 +195,13 @@ export default function Hero() {
 
           </div>
 
-          {/* Bottom Left Notch: Social Links */}
-          <div className="absolute bottom-4 left-4 z-30 hidden sm:flex items-center gap-2 bg-[#140e28] p-2.5 rounded-2xl border-2 border-purple-light/40 shadow-md">
+          {/* Bottom Left Notch: Social Links (Transparent Canvas Inverted Corner Curves) */}
+          <div className="absolute -bottom-0.5 -left-0.5 z-30 hidden sm:flex items-center gap-2 bg-[#140e28] p-3 sm:p-3.5 rounded-tr-3xl border-t-2 border-r-2 border-[#2d1b54] shadow-xl">
+            {/* Top inverted curve */}
+            <div className="absolute -top-6 left-0 w-6 h-6 pointer-events-none bg-[radial-gradient(circle_at_100%_0%,transparent_24px,#140e28_24.5px)]"></div>
+            {/* Right inverted curve */}
+            <div className="absolute bottom-0 -right-6 w-6 h-6 pointer-events-none bg-[radial-gradient(circle_at_100%_0%,transparent_24px,#140e28_24.5px)]"></div>
+
             <a href="https://github.com" target="_blank" rel="noreferrer" className="p-2 rounded-xl text-gray-300 hover:text-lime hover:bg-white/10 transition-all" aria-label="GitHub">
               <Github className="w-4 h-4" />
             </a>
@@ -258,10 +216,14 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Bottom Right Notch: Prize Pool & Join Now Button */}
-          <div className="absolute bottom-0 right-0 bg-[#140e28] p-3.5 sm:p-4 rounded-tl-3xl border-t-2 border-l-2 border-purple-light/40 z-30 flex items-center gap-4 shadow-xl">
+          {/* Bottom Right Notch: Prize Pool & Join Now Button (Transparent Canvas Inverted Corner Curves) */}
+          <div className="absolute -bottom-0.5 -right-0.5 bg-[#140e28] p-3.5 sm:p-4 rounded-tl-3xl border-t-2 border-l-2 border-[#2d1b54] z-30 flex items-center gap-4 shadow-xl">
+            {/* Top inverted curve */}
+            <div className="absolute -top-6 right-0 w-6 h-6 pointer-events-none bg-[radial-gradient(circle_at_0%_100%,transparent_24px,#140e28_24.5px)]"></div>
+            {/* Left inverted curve */}
+            <div className="absolute bottom-0 -left-6 w-6 h-6 pointer-events-none bg-[radial-gradient(circle_at_0%_0%,transparent_24px,#140e28_24.5px)]"></div>
             <div className="text-right">
-              <div className="text-2xl sm:text-3xl font-serif font-black text-white leading-none">
+              <div className="text-2xl sm:text-3xl font-sans font-black text-white leading-none">
                 ₹50<span className="text-sm font-mono text-lime font-bold">K</span>
               </div>
               <div className="text-[9px] font-mono text-gray-400 font-bold uppercase tracking-wider mt-0.5">

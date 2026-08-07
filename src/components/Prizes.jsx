@@ -58,7 +58,7 @@ export default function Prizes() {
             <Trophy className="w-3.5 h-3.5 text-purple" />
             REWARD MATRIX
           </div>
-          <h2 className="text-4xl sm:text-6xl font-serif font-extrabold tracking-tight text-graphite">
+          <h2 className="text-4xl sm:text-6xl font-sans font-black font-extrabold tracking-tight text-graphite">
             MISSION <span className="purple-highlight">PRIZES</span>
           </h2>
           <p className="text-base sm:text-lg font-medium text-graphite/70">
@@ -90,7 +90,7 @@ export default function Prizes() {
                   <h3 className="text-xs font-mono font-bold uppercase opacity-80 tracking-widest">
                     {card.place}
                   </h3>
-                  <div className="text-4xl sm:text-5xl font-serif font-extrabold my-2">
+                  <div className="text-4xl sm:text-5xl font-sans font-black font-extrabold my-2">
                     {card.amount}
                   </div>
                   <p className="text-xs font-mono opacity-80 mb-6">
@@ -127,7 +127,7 @@ export default function Prizes() {
               SPECIAL BENEFIT // SCRATCH TO REVEAL
             </div>
             
-            <h3 className="text-2xl font-serif font-bold text-graphite mb-2">
+            <h3 className="text-2xl font-sans font-black font-bold text-graphite mb-2">
               MYSTERY REWARD CARD
             </h3>
             <p className="text-xs sm:text-sm text-graphite/70 max-w-md mx-auto mb-6">
@@ -154,7 +154,7 @@ export default function Prizes() {
                   <div className="inline-flex p-2 rounded-full bg-white text-purple">
                     <Sparkles className="w-6 h-6 fill-purple" />
                   </div>
-                  <h4 className="font-serif font-extrabold text-xl sm:text-2xl text-white">
+                  <h4 className="font-sans font-black font-extrabold text-xl sm:text-2xl text-white">
                     FREE DIGITAL CERTIFICATES & MENTORSHIP
                   </h4>
                   <p className="text-xs font-mono text-purple-light font-bold">
@@ -185,7 +185,7 @@ export default function Prizes() {
                 <Ticket className="w-3.5 h-3.5 text-white" />
                 DIGITAL ADMIT PASS
               </div>
-              <h3 className="text-2xl sm:text-3xl font-serif font-bold text-white">
+              <h3 className="text-2xl sm:text-3xl font-sans font-black font-bold text-white">
                 CODERUSH 1.0 — ADMIT ONE
               </h3>
               <p className="text-xs font-mono text-gray-400">
