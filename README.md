@@ -46,7 +46,8 @@ HackNext/
 │   │   ├── Navbar.jsx            # Glassmorphic navigation header
 │   │   ├── Prizes.jsx            # Reward matrix, digital admit pass & scratch reward card
 │   │   ├── ProcessCards.jsx      # "THE SEQUENCE" 4 angled dark deck cards with neon ribbons
-│   │   ├── RulesAndFAQ.jsx       # Event guidelines, eligibility, payment & accordion FAQ
+│   │   ├── FAQ.jsx               # Interactive FAQ accordion with smooth animations
+├   |   |── Rules.jsx             # Event guidelines, eligibility & registration information
 │   │   ├── ThreeCanvas.jsx       # Three.js 3D WebGL background canvas
 │   │   ├── Timeline.jsx          # Tabbed event schedule & submission protocol
 │   │   └── Tracks.jsx            # "Choose Your Battlefield" 4 challenge track cards

@@ -1,0 +1,50 @@
+const faqs = [
+    {
+      q: 'Who can participate in CodeRush 1.0?',
+      a: 'Any college student from any branch or academic year across India. Both individuals and teams of up to 4 members are welcome.'
+    },
+    {
+      q: 'What is the team size for CodeRush 1.0?',
+      a: 'Teams can have 1 to 4 members. Solo participation is also allowed.'
+    },
+    {
+      q: 'Is there a registration fee?',
+      a: 'Registration details and fee structures are listed on the official Unstop portal. Check the Payment section for updates.'
+    },
+    {
+      q: 'Do I need prior coding experience?',
+      a: 'Not necessarily! CodeRush 1.0 includes dedicated Ideathon and UI/UX design tracks where coding is minimal. All skill levels are welcome.'
+    },
+    {
+      q: 'Is the event online or offline?',
+      a: 'CodeRush 1.0 is organized by CSI TCET (Dept of Computer Engineering). Official mode and venue details are updated on the portal.'
+    },
+    {
+      q: 'What do I need to submit at the end of 12 hours?',
+      a: 'A live demo link, Figma prototype, or presentation deck along with a brief project summary and GitHub repo link (if applicable).'
+    },
+    {
+      q: 'Can I use pre-built templates or open-source code?',
+      a: 'You can use open-source libraries and frameworks, but the core solution must be created during the event. Submitting full pre-built templates is prohibited.'
+    },
+    {
+      q: 'Will mentors be available during the event?',
+      a: 'Yes, mentors will be available during the hackathon for guidance, reviews, and technical feedback.'
+    },
+    {
+      q: 'How will projects be judged?',
+      a: 'Projects are evaluated on 5 key criteria: Innovation & Creativity, Design Quality (UI/UX), Feasibility, Presentation, and Real-world Impact.'
+    },
+    {
+      q: 'Where do I register?',
+      a: 'Click the "Register Now" button in the navigation bar to sign up directly on the official registration portal.'
+    },
+    {
+      q: 'What if a team member drops out mid-event?',
+      a: 'The remaining team members can still continue. Notify the CSI TCET organizers immediately in such cases.'
+    },
+    {
+      q: 'Will participation certificates be provided?',
+      a: 'Yes! All registered participants who submit valid projects will receive an official Digital Participation Certificate from CSI TCET.'
+    }
+  ];

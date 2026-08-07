@@ -6,8 +6,10 @@ import ProcessCards from './components/ProcessCards';
 import Tracks from './components/Tracks';
 import Timeline from './components/Timeline';
 import Prizes from './components/Prizes';
-import RulesAndFAQ from './components/RulesAndFAQ';
+import Rules from './components/Rules';
+import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+
 
 export default function App() {
   return (
@@ -20,7 +22,8 @@ export default function App() {
         <Tracks />
         <Timeline />
         <Prizes />
-        <RulesAndFAQ />
+        <Rules />
+        <FAQ />
       </main>
       <Footer />
     </div>
