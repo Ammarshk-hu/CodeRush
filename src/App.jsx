@@ -9,14 +9,14 @@ import Timeline from './components/Timeline';
 import Prizes from './components/Prizes';
 import Rules from './components/Rules';
 import FAQ from './components/FAQ';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
-
 
 export default function App() {
   return (
     <div className="min-h-screen bg-[#f7f7f2] text-graphite font-sans selection:bg-lime selection:text-graphite">
       <main>
-       <Navbar />
+        <Navbar />
         <Hero />
         <Marquee />
         <About />
@@ -26,6 +26,8 @@ export default function App() {
         <Prizes />
         <Rules />
         <FAQ />
+        <Contact />
+        <Footer />
       </main>
     </div>
   );
