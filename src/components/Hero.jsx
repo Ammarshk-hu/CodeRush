@@ -123,79 +123,62 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Floating Tech Stack 3D Assets (White background with multiply blend mode for perfect transparency on light backgrounds) */}
-          <div className="absolute inset-0 z-10 pointer-events-none overflow-hidden mix-blend-multiply opacity-90">
-            {/* React */}
+          {/* Floating 3D Tech Stack Logos (4K resolution with multiply blend mode for white transparency on light gradient) */}
+          <div className="absolute inset-0 z-10 pointer-events-none overflow-hidden mix-blend-multiply opacity-100">
+            {/* Top Left Area - React */}
             <motion.img 
-              src="/images/cute_react.png" 
-              alt="Floating React"
-              initial={{ x: "-20vw", y: "15vh" }}
-              animate={{ x: "120vw", y: ["15vh", "20vh", "15vh"] }}
-              transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
-              className="absolute w-28 md:w-40 opacity-90"
+              src="/images/cute_tech_react.png" 
+              alt="Floating React Logo"
+              initial={{ y: 0, rotate: -5 }}
+              animate={{ y: [0, -15, 0], rotate: [-5, 5, -5] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute top-10 left-[15%] w-32 md:w-48 opacity-95 scale-x-[-1]"
             />
-            {/* Node */}
+            {/* Top Right Area - JS */}
             <motion.img 
-              src="/images/cute_node.png" 
-              alt="Floating Node"
-              initial={{ x: "-20vw", y: "65vh" }}
-              animate={{ x: "120vw", y: ["65vh", "60vh", "65vh"] }}
-              transition={{ duration: 22, repeat: Infinity, ease: "linear", delay: 3 }}
-              className="absolute w-36 md:w-48 opacity-85"
+              src="/images/cute_tech_js.png" 
+              alt="Floating JS Logo"
+              initial={{ y: 0, rotate: 10 }}
+              animate={{ y: [0, 20, 0], rotate: [10, -5, 10] }}
+              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+              className="absolute top-16 right-[8%] w-40 md:w-56 opacity-100"
             />
-            {/* JS */}
+            {/* Bottom Left Area - Python */}
             <motion.img 
-              src="/images/cute_js.png" 
-              alt="Floating JS"
-              initial={{ x: "-20vw", y: "40vh" }}
-              animate={{ x: "120vw", y: ["40vh", "45vh", "40vh"] }}
-              transition={{ duration: 15, repeat: Infinity, ease: "linear", delay: 7 }}
-              className="absolute w-24 md:w-32 opacity-95"
+              src="/images/cute_tech_python.png" 
+              alt="Floating Python Logo"
+              initial={{ y: 0, rotate: -15 }}
+              animate={{ y: [0, -25, 0], rotate: [-15, 0, -15] }}
+              transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+              className="absolute bottom-32 left-[8%] w-36 md:w-52 opacity-95 scale-x-[-1]"
             />
-            {/* React 2 (Slower, background) */}
+            {/* Bottom Right Area - Node.js */}
             <motion.img 
-              src="/images/cute_react.png" 
-              alt="Floating React 2"
-              initial={{ x: "-20vw", y: "75vh" }}
-              animate={{ x: "120vw", y: ["75vh", "80vh", "75vh"] }}
-              transition={{ duration: 25, repeat: Infinity, ease: "linear", delay: 10 }}
-              className="absolute w-20 md:w-28 opacity-60 blur-[2px]"
+              src="/images/cute_tech_node.png" 
+              alt="Floating Node.js Logo"
+              initial={{ y: 0, rotate: 5 }}
+              animate={{ y: [0, -20, 0], rotate: [5, -10, 5] }}
+              transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
+              className="absolute bottom-20 right-[15%] w-44 md:w-60 opacity-100"
             />
-            {/* Node 2 (Faster, foreground) */}
+            
+            {/* Background Mid-Left Area - JS (Duplicate, smaller, blurred) */}
             <motion.img 
-              src="/images/cute_node.png" 
-              alt="Floating Node 2"
-              initial={{ x: "-20vw", y: "25vh" }}
-              animate={{ x: "120vw", y: ["25vh", "20vh", "25vh"] }}
-              transition={{ duration: 12, repeat: Infinity, ease: "linear", delay: 1 }}
-              className="absolute w-40 md:w-56 opacity-75 blur-[1px]"
+              src="/images/cute_tech_js.png" 
+              alt="Floating JS Logo 2"
+              initial={{ y: 0, rotate: 20 }}
+              animate={{ y: [0, 15, 0], rotate: [20, 5, 20] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+              className="absolute top-[40%] left-[3%] w-24 md:w-32 opacity-80 blur-[2px] scale-x-[-1]"
             />
-            {/* JS 2 (Background) */}
+            {/* Background Mid-Right Area - React (Duplicate, smaller, blurred) */}
             <motion.img 
-              src="/images/cute_js.png" 
-              alt="Floating JS 2"
-              initial={{ x: "-20vw", y: "5vh" }}
-              animate={{ x: "120vw", y: ["5vh", "10vh", "5vh"] }}
-              transition={{ duration: 28, repeat: Infinity, ease: "linear", delay: 5 }}
-              className="absolute w-20 md:w-24 opacity-50 blur-[3px]"
-            />
-            {/* React 3 (Very slow) */}
-            <motion.img 
-              src="/images/cute_react.png" 
-              alt="Floating React 3"
-              initial={{ x: "-20vw", y: "50vh" }}
-              animate={{ x: "120vw", y: ["50vh", "55vh", "50vh"] }}
-              transition={{ duration: 32, repeat: Infinity, ease: "linear", delay: 15 }}
-              className="absolute w-32 md:w-44 opacity-80"
-            />
-            {/* JS 3 */}
-            <motion.img 
-              src="/images/cute_js.png" 
-              alt="Floating JS 3"
-              initial={{ x: "-20vw", y: "85vh" }}
-              animate={{ x: "120vw", y: ["85vh", "80vh", "85vh"] }}
-              transition={{ duration: 20, repeat: Infinity, ease: "linear", delay: 12 }}
-              className="absolute w-32 md:w-40 opacity-85"
+              src="/images/cute_tech_react.png" 
+              alt="Floating React Logo 2"
+              initial={{ y: 0, rotate: -10 }}
+              animate={{ y: [0, -15, 0], rotate: [-10, -25, -10] }}
+              transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 2.5 }}
+              className="absolute top-[50%] right-[4%] w-28 md:w-36 opacity-85 blur-[1px]"
             />
           </div>
 
