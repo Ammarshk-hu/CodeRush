@@ -123,25 +123,103 @@ export default function Hero() {
             </div>
           </div>
 
+          {/* Floating Tech Stack 3D Assets (White background with multiply blend mode for perfect transparency on light backgrounds) */}
+          <div className="absolute inset-0 z-10 pointer-events-none overflow-hidden mix-blend-multiply opacity-90">
+            {/* React */}
+            <motion.img 
+              src="/images/cute_react.png" 
+              alt="Floating React"
+              initial={{ x: "-20vw", y: "15vh" }}
+              animate={{ x: "120vw", y: ["15vh", "20vh", "15vh"] }}
+              transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
+              className="absolute w-28 md:w-40 opacity-90"
+            />
+            {/* Node */}
+            <motion.img 
+              src="/images/cute_node.png" 
+              alt="Floating Node"
+              initial={{ x: "-20vw", y: "65vh" }}
+              animate={{ x: "120vw", y: ["65vh", "60vh", "65vh"] }}
+              transition={{ duration: 22, repeat: Infinity, ease: "linear", delay: 3 }}
+              className="absolute w-36 md:w-48 opacity-85"
+            />
+            {/* JS */}
+            <motion.img 
+              src="/images/cute_js.png" 
+              alt="Floating JS"
+              initial={{ x: "-20vw", y: "40vh" }}
+              animate={{ x: "120vw", y: ["40vh", "45vh", "40vh"] }}
+              transition={{ duration: 15, repeat: Infinity, ease: "linear", delay: 7 }}
+              className="absolute w-24 md:w-32 opacity-95"
+            />
+            {/* React 2 (Slower, background) */}
+            <motion.img 
+              src="/images/cute_react.png" 
+              alt="Floating React 2"
+              initial={{ x: "-20vw", y: "75vh" }}
+              animate={{ x: "120vw", y: ["75vh", "80vh", "75vh"] }}
+              transition={{ duration: 25, repeat: Infinity, ease: "linear", delay: 10 }}
+              className="absolute w-20 md:w-28 opacity-60 blur-[2px]"
+            />
+            {/* Node 2 (Faster, foreground) */}
+            <motion.img 
+              src="/images/cute_node.png" 
+              alt="Floating Node 2"
+              initial={{ x: "-20vw", y: "25vh" }}
+              animate={{ x: "120vw", y: ["25vh", "20vh", "25vh"] }}
+              transition={{ duration: 12, repeat: Infinity, ease: "linear", delay: 1 }}
+              className="absolute w-40 md:w-56 opacity-75 blur-[1px]"
+            />
+            {/* JS 2 (Background) */}
+            <motion.img 
+              src="/images/cute_js.png" 
+              alt="Floating JS 2"
+              initial={{ x: "-20vw", y: "5vh" }}
+              animate={{ x: "120vw", y: ["5vh", "10vh", "5vh"] }}
+              transition={{ duration: 28, repeat: Infinity, ease: "linear", delay: 5 }}
+              className="absolute w-20 md:w-24 opacity-50 blur-[3px]"
+            />
+            {/* React 3 (Very slow) */}
+            <motion.img 
+              src="/images/cute_react.png" 
+              alt="Floating React 3"
+              initial={{ x: "-20vw", y: "50vh" }}
+              animate={{ x: "120vw", y: ["50vh", "55vh", "50vh"] }}
+              transition={{ duration: 32, repeat: Infinity, ease: "linear", delay: 15 }}
+              className="absolute w-32 md:w-44 opacity-80"
+            />
+            {/* JS 3 */}
+            <motion.img 
+              src="/images/cute_js.png" 
+              alt="Floating JS 3"
+              initial={{ x: "-20vw", y: "85vh" }}
+              animate={{ x: "120vw", y: ["85vh", "80vh", "85vh"] }}
+              transition={{ duration: 20, repeat: Infinity, ease: "linear", delay: 12 }}
+              className="absolute w-32 md:w-40 opacity-85"
+            />
+          </div>
+
           {/* CENTER HERO MAIN CONTENT */}
           <div className="my-auto text-center w-full max-w-5xl mx-auto space-y-5 sm:space-y-6 pt-10 sm:pt-14 pb-8 sm:pb-12 relative z-20 flex flex-col items-center justify-center px-2">
             
-            {/* Top Organizer Line: Computer Society of India | Thakur College of Engineering */}
+            {/* Top Organizer Line: Computer Society of India | Thakur College of Engineering (Premium Typography) */}
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="space-y-1.5 text-center"
+              className="space-y-1 text-center flex flex-col items-center justify-center"
             >
-              <h2 className="text-lg sm:text-2xl lg:text-3xl font-sans font-black text-graphite tracking-wide">
+              <h2 className="text-xl sm:text-3xl lg:text-4xl font-sans font-bold text-graphite tracking-tight">
                 Computer Society of India
               </h2>
-              <p className="text-xs sm:text-sm lg:text-base font-mono font-bold text-purple uppercase tracking-wider">
-                Thakur College of Engineering
-              </p>
-              <div className="pt-1.5">
-                <span className="text-[10px] sm:text-xs font-mono tracking-widest text-gray-500 uppercase font-black px-3.5 py-1 rounded-full bg-white border border-[#e2e2f0] shadow-sm">
-                  PRESENTS
+              <div className="flex items-center justify-center gap-2 text-xs sm:text-base font-sans font-medium text-gray-600">
+                <span className="text-purple font-bold">TCET Chapter</span>
+                <span className="text-gray-300 font-light">|</span>
+                <span>Thakur College of Engineering</span>
+              </div>
+              <div className="pt-2">
+                <span className="text-xs sm:text-sm font-mono tracking-[0.35em] text-gray-500 uppercase font-bold">
+                  P R E S E N T S
                 </span>
               </div>
             </motion.div>
