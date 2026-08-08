@@ -49,13 +49,14 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="relative h-dvh min-h-dvh max-h-screen w-full bg-[#140e28] p-1 sm:p-2 md:p-3 overflow-hidden flex flex-col justify-center items-center">
+    <section id="home" className="relative h-dvh min-h-dvh max-h-screen w-full bg-[#140e28] pt-1 sm:pt-2 md:pt-3 px-1 sm:px-2 md:px-3 pb-0 overflow-hidden flex flex-col justify-center items-center">
       
       {/* Outer Dark Purple Frame (Exact Fit Full Height & Width) */}
-      <div className="w-full h-full flex-1 relative rounded-[24px] sm:rounded-[36px] bg-[#140e28] p-1.5 sm:p-2.5 border-4 border-[#2d1b54] shadow-[0_20px_50px_rgba(20,14,40,0.4)] flex flex-col justify-between overflow-hidden">
+      <div className="w-full h-full flex-1 relative rounded-t-[24px] sm:rounded-t-[36px] rounded-b-none bg-[#140e28] pt-1.5 sm:pt-2.5 px-1.5 sm:px-2.5 pb-0 border-x-4 border-t-4 border-b-0 border-[#2d1b54] shadow-[0_20px_50px_rgba(20,14,40,0.4)] flex flex-col justify-between overflow-hidden">
         
         {/* Inner Clean Light Canvas */}
-        <div className="relative flex-1 rounded-[18px] sm:rounded-[30px] bg-[#f8f8fc] flex flex-col justify-between p-6 sm:p-10 lg:p-14 overflow-hidden">
+        <div className="relative flex-1 rounded-t-[18px] sm:rounded-t-[30px] rounded-b-[18px] sm:rounded-b-[30px] mb-2 sm:mb-3 bg-[#f8f8fc] flex flex-col justify-between p-6 sm:p-10 lg:p-14 overflow-hidden">
+
           
           {/* Iridescent Holographic Wave Top Blur Overlay */}
           <div className="absolute top-0 left-0 right-0 h-[380px] holo-top-banner pointer-events-none z-0"></div>
@@ -179,6 +180,24 @@ export default function Hero() {
               animate={{ y: [0, -15, 0], rotate: [-10, -25, -10] }}
               transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 2.5 }}
               className="absolute top-[50%] right-[4%] w-28 md:w-36 opacity-85 blur-[1px]"
+            />
+
+            {/* Extra Left-Facing Characters */}
+            <motion.img 
+              src="/images/cute_tech_node.png" 
+              alt="Floating Node.js Logo 2"
+              initial={{ y: 0, rotate: -12 }}
+              animate={{ y: [0, -12, 0], rotate: [-12, -22, -12] }}
+              transition={{ duration: 5.2, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
+              className="absolute top-[25%] left-[35%] w-20 md:w-28 opacity-60 blur-[3px] scale-x-[-1]"
+            />
+            <motion.img 
+              src="/images/cute_tech_python.png" 
+              alt="Floating Python Logo 2"
+              initial={{ y: 0, rotate: 18 }}
+              animate={{ y: [0, 18, 0], rotate: [18, 5, 18] }}
+              transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut", delay: 1.2 }}
+              className="absolute bottom-[40%] right-[30%] w-24 md:w-32 opacity-70 blur-[2px] scale-x-[-1]"
             />
           </div>
 
