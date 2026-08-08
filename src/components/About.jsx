@@ -9,32 +9,29 @@ export default function About() {
     { label: 'TEAM SIZE', value: '1 to 4 Members' },
     { label: 'ORGANIZER', value: 'CSI (Dept of Comp Engg - TCET)' },
     { label: 'REGISTRATION', value: 'Open Now (Unstop Portal)' },
-    { label: 'EVENT DATE', value: '22 August 2026' },
-    { label: 'START TIME', value: '22 Aug 2026 — 10:00 AM IST' },
-    { label: 'END TIME', value: '22 Aug 2026 — 10:00 PM IST' },
   ];
 
   const bentoFeatureCards = [
     {
-      title: 'Build',
-      subtitle: 'Turn ideas into powerful products.',
-      badge: '01 // SPRINT',
+      title: 'Create',
+      subtitle: 'Spin up bold ideas before doubt catches up.',
+      badge: '01 // IGNITE',
       icon: Code2,
       color: 'border-cyanAccent text-cyanAccent',
       bg: 'bg-cyanAccent/10'
     },
     {
-      title: 'Collaborate',
-      subtitle: 'Team up, brainstorm, break boundaries.',
-      badge: '02 // TEAMWORK',
+      title: 'Connect',
+      subtitle: 'Find your crew, split the chaos, multiply momentum.',
+      badge: '02 // UNITE',
       icon: Users2,
       color: 'border-purple text-purple',
       bg: 'bg-purple/10'
     },
     {
-      title: 'Impact',
-      subtitle: 'Create solutions that shape tomorrow.',
-      badge: '03 // RESULT',
+      title: 'Deliver',
+      subtitle: 'Cross the finish line with something worth showing off.',
+      badge: '03 // ELEVATE',
       icon: Sparkles,
       color: 'border-lime text-graphite',
       bg: 'bg-lime'
@@ -50,19 +47,19 @@ export default function About() {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-light/20 border border-purple/30 text-purple font-mono text-xs font-bold uppercase mb-4">
               <span className="w-2 h-2 rounded-full bg-purple animate-ping"></span>
-              ABOUT CODERUSH 1.0
+              ABOUT THE CODERUSH1.0
             </div>
-            <h2 className="text-4xl sm:text-6xl font-serif font-extrabold tracking-tight text-graphite">
-              More Than <br className="hidden sm:block" />
-              Just <span className="purple-highlight">Code.</span>
+            <h2 className="text-4xl sm:text-6xl font-sans font-black font-extrabold tracking-tight text-graphite">
+              Where Ideas <br className="hidden sm:block" />
+              Meet <span className="purple-highlight">Motion.</span>
             </h2>
           </div>
           <p className="text-base sm:text-lg font-medium text-graphite/70 max-w-lg">
-            A platform for dreamers, coders, and UI/UX designers to push beyond limits and build solutions that matter.
+            One night, zero limits — coders and designers racing the clock to turn sparks of ideas into something real.
           </p>
         </div>
 
-        {/* 3 Bento Feature Cards (CodeFusion 2024 Inspired: Build, Collaborate, Impact) */}
+        {/* 3 Bento Feature Cards (CodeFusion 2024 Inspired: Create, Connect, Deliver) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           {bentoFeatureCards.map((card, idx) => {
             const IconComp = card.icon;
@@ -83,7 +80,7 @@ export default function About() {
                     </div>
                   </div>
 
-                  <h3 className="text-3xl font-serif font-extrabold text-graphite mb-2">
+                  <h3 className="text-3xl font-sans font-black font-extrabold text-graphite mb-2">
                     {card.title}
                   </h3>
                   <p className="text-sm text-graphite/70 font-medium">
@@ -111,7 +108,7 @@ export default function About() {
                   <Database className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="text-2xl sm:text-3xl font-serif font-extrabold text-graphite">
+                  <h3 className="text-2xl sm:text-3xl font-sans font-black font-extrabold text-graphite">
                     CODERUSH CORE DATABASE
                   </h3>
                   <p className="text-xs font-mono text-purple font-semibold">
@@ -134,7 +131,7 @@ export default function About() {
                   <div className="text-[10px] font-mono font-bold text-gray-500 tracking-wider uppercase mb-1">
                     {item.label}
                   </div>
-                  <div className="text-base font-serif font-bold text-graphite group-hover:text-purple transition-colors">
+                  <div className="text-base font-sans font-black font-bold text-graphite group-hover:text-purple transition-colors">
                     {item.value}
                   </div>
                 </div>
