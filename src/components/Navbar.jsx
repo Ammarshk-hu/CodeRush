@@ -56,7 +56,7 @@ export default function Navbar() {
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="font-serif text-2xl font-extrabold tracking-tight text-graphite">
+                <span className="font-sans text-2xl font-black tracking-tight text-graphite">
                   CODE<span className="text-purple ml-0.5">RUSH</span>
                 </span>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-lime text-graphite font-black">
