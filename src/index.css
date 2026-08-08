@@ -37,6 +37,7 @@
   display: inline;
 }
 
+
 .cyan-highlight {
   background-color: #06b6d4;
   color: #ffffff;
@@ -45,6 +46,7 @@
   font-weight: 800;
   display: inline;
 }
+
 
 /* CodeFusion Light Glass Bento Card */
 .codefusion-card {
@@ -62,13 +64,13 @@
   box-shadow: 0 18px 36px -5px rgba(139, 92, 246, 0.18), 0 0 0 1px #8b5cf6;
 }
 
-/* Dark Section with Purple Doodle Texture */
+/* Dark Section with Purple Doodle / Cyber Grid Texture */
 .bg-purple-doodle {
   background-color: #120d24;
   background-image: 
-    radial-gradient(circle at 20% 20%, rgba(139, 92, 246, 0.15) 0%, transparent 40%),
-    radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.15) 0%, transparent 40%),
-    radial-gradient(circle at 50% 50%, rgba(204, 255, 0, 0.1) 0%, transparent 50%);
+    radial-gradient(circle at 15% 15%, rgba(139, 92, 246, 0.25) 0%, transparent 45%),
+    radial-gradient(circle at 85% 75%, rgba(6, 182, 212, 0.2) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(204, 255, 0, 0.12) 0%, transparent 55%);
   position: relative;
 }
 
@@ -76,9 +78,13 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 16c3-3 8-3 11 0s3 8 0 11-8 3-11 0-3-8 0-11zm28 28c4-4 10-4 14 0s4 10 0 14-10 4-14 0-4-10 0-14zM8 58c3-3 7-3 10 0s3 7 0 10-7 3-10 0-3-7 0-10zm48-40c2-2 6-2 8 0s2 6 0 8-6 2-8 0-2-6 0-8z' fill='%238b5cf6' fill-opacity='0.08' fill-rule='evenodd'/%3E%3C/svg%3E");
-  pointer-events-none: none;
+  background-image: 
+    linear-gradient(to right, rgba(139, 92, 246, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(139, 92, 246, 0.07) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
 }
+
 
 /* Orbit Ribbon Glowing Dark Cards */
 .orbit-card {
@@ -103,4 +109,21 @@
 .bg-grid-pattern {
   background-image: radial-gradient(#cbd5e1 1.2px, transparent 1.2px);
   background-size: 24px 24px;
+}
+
+/* Neon Path Timeline */
+.neon-path-glow {
+  box-shadow: 0 0 15px rgba(204, 255, 0, 0.5), 0 0 30px rgba(204, 255, 0, 0.3);
+}
+.timeline-line-glow {
+  filter: drop-shadow(0 0 8px rgba(204, 255, 0, 0.8));
+}
+.neon-card {
+  background: linear-gradient(145deg, #ffffff, #fdfdfc);
+  border: 2px solid rgba(204, 255, 0, 0.5);
+  box-shadow: 0 10px 25px -5px rgba(204, 255, 0, 0.15), 0 0 0 1px rgba(204, 255, 0, 0.2);
+}
+.neon-card:hover {
+  border-color: #ccff00;
+  box-shadow: 0 15px 35px -5px rgba(204, 255, 0, 0.25), 0 0 0 2px rgba(204, 255, 0, 0.4);
 }

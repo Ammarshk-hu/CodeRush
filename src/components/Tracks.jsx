@@ -68,7 +68,7 @@ export default function Tracks() {
               <Layers className="w-3.5 h-3.5 text-purple" />
               CHALLENGE TRACKS
             </div>
-            <h2 className="text-4xl sm:text-6xl font-serif font-extrabold tracking-tight text-graphite">
+            <h2 className="text-4xl sm:text-6xl font-sans font-black font-extrabold tracking-tight text-graphite">
               Choose Your <br className="hidden sm:block" />
               <span className="purple-highlight">Battlefield.</span>
             </h2>
@@ -106,7 +106,7 @@ export default function Tracks() {
                       <Icon className="w-7 h-7" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-serif font-bold text-white">
+                      <h3 className="text-2xl font-sans font-black font-bold text-white">
                         {track.title}
                       </h3>
                       <p className="text-xs font-mono font-bold text-purple-light uppercase">
@@ -146,7 +146,7 @@ export default function Tracks() {
                 <Code className="w-6 h-6" />
               </div>
               <div>
-                <h3 className="text-xl sm:text-2xl font-serif font-bold text-white">
+                <h3 className="text-xl sm:text-2xl font-sans font-black font-bold text-white">
                   AUTHORIZED TECH STACK
                 </h3>
                 <p className="text-xs font-mono text-gray-400">
