@@ -37,6 +37,7 @@
   display: inline;
 }
 
+
 .cyan-highlight {
   background-color: #06b6d4;
   color: #ffffff;
@@ -45,6 +46,7 @@
   font-weight: 800;
   display: inline;
 }
+
 
 /* CodeFusion Light Glass Bento Card */
 .codefusion-card {
@@ -107,4 +109,21 @@
 .bg-grid-pattern {
   background-image: radial-gradient(#cbd5e1 1.2px, transparent 1.2px);
   background-size: 24px 24px;
+}
+
+/* Neon Path Timeline */
+.neon-path-glow {
+  box-shadow: 0 0 15px rgba(204, 255, 0, 0.5), 0 0 30px rgba(204, 255, 0, 0.3);
+}
+.timeline-line-glow {
+  filter: drop-shadow(0 0 8px rgba(204, 255, 0, 0.8));
+}
+.neon-card {
+  background: linear-gradient(145deg, #ffffff, #fdfdfc);
+  border: 2px solid rgba(204, 255, 0, 0.5);
+  box-shadow: 0 10px 25px -5px rgba(204, 255, 0, 0.15), 0 0 0 1px rgba(204, 255, 0, 0.2);
+}
+.neon-card:hover {
+  border-color: #ccff00;
+  box-shadow: 0 15px 35px -5px rgba(204, 255, 0, 0.25), 0 0 0 2px rgba(204, 255, 0, 0.4);
 }
